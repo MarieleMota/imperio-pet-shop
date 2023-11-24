@@ -1,0 +1,119 @@
+@charset "UTF-8";   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+html {
+    height: 500vh; /*efeito de rolagem da tel. Não é necessario*/
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*perfeitamente centralizado*/
+}
+
+header {
+    background-color: #8DAFE5;
+    height: 200px;
+    width: 100%;
+    padding: 28px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+header.rolagem {
+    background-color: white;
+    padding: 10px 2%;
+    height: 130px;
+    /*pode mudar a cor de fundo. mas tem q mudar a cor das letras tmb*/
+}
+
+header.rolagem a {
+    color: #012661;
+}
+
+header.rolagem .logo {
+    width: 150px;
+    margin-top: 8px;
+}
+
+.logo {
+    width: 250px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-contato button {
+    width: 40px;
+    height: 40px;
+    background-color: #0257E0;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 2s;
+}
+
+.btn-contato button i {
+    font-size: 20px;
+    color: white;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url("imagens/imagemprincipal2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+#h1 {
+    padding-top: 215px;
+}
+
+.banner > h1 {
+    padding: 10px;
+    font-family: var(--fonte-gliker);
+    color: white;
+    font-size: 3em;
+    padding-top: 60px;
+    margin-left: 130px;
+}
+
+.banner p {
+    font-size: 2em;
+    padding-top: 100px;
+    margin-left: 139px;
+    color: white;
+}

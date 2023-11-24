@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/50ad65a368.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <title>Agendamento</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1><i class="fa-solid fa-shield-dog"></i>Informações de Agendamento<i class="fa-solid fa-shield-cat"></i></h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Tutor" required maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                        <input id="lastname" type="text" name="lastname" placeholder="Nome Pet" required maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Raça" required maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <!-- <input id="firstname" type="text" name="firstname" placeholder="Porte" required> -->
+
+                        <select name="porte" id="porte">                          
+                            <option value="" selected>Porte</option>
+                            <option value="G">Grande</option>
+                            <option value="M">Médio</option>
+                            <option value="P">Pequeno</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Idade" required maxlength="15">
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <!-- <input id="firstname" type="text" name="firstname" placeholder="Gênero" required> -->
+
+                        <select name="genero" id="genero">                          
+                            <option value="" selected>Gênero</option>
+                            <option value="M">Macho</option>
+                            <option value="F">Fêmea</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Alergia" required maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Restrição Alimentar" required maxlength="50">
+                    </div>
+
+                    <div class="input-box">
+                         
+                        <!-- <input id="firstname" type="text" name="firstname" placeholder="Tipo Animal" required> -->
+
+                        <select name="tipoanimal" id="tipoanimal">                          
+                            <option value="" selected>tipo Animal</option>
+                            <option value="G">Gato</option>
+                            <option value="C">Cachorro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Hora" required maxlength="6">
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <!-- <input id="firstname" type="text" name="firstname" placeholder="Serviço" required> -->
+
+                        <select name="servico" id="servico">                          
+                            <option value="" selected>Serviço</option>
+                            <optgroup label="Veterinários">
+                                <option value="Castr">Castração</option>
+                                <option value="Parto">Trabalho de Parto</option>
+                                <option value="Exame">Exames</option>
+                                <option value="Vacin">Vacinação</option>
+                            </optgroup>
+
+                            <optgroup label="Estéticos">
+                                <option value="Spa">Spa</option>
+                                <option value="Banho">Banho e Tosa</option>
+                            </optgroup>
+
+                            <optgroup label="Em Geral">
+                                <option value="Creche">Creche</option>
+                                <option value="Ades">Adestramento</option>
+                                <option value="Hosp">Hospedagem</option>
+                                <option value="Taxi">Taxi Dog</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        
+                        <input id="firstname" type="text" name="firstname" placeholder="Observação" required maxlength="50">
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button onclick="abriralerta()"><a href="principal.html">AGENDE AGORA</a></button>
+                </div>
+                <script>
+                    function abriralerta() {
+                        swal({
+                            title: "Agendamento Feito Com Sucesso",
+                            icon: "success",
+                            });
+                        }
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

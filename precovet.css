@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*fonte destaque - Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@800&display=swap'); 
+
+/*fonte destaque - Quicksand*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('fontes/Gliker-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #8DAFE5;
+    --cor2: #0257E0;
+    --cor3: #4548FF;
+    --cor4: #0244AD;
+    --cor5: #0D0F99;
+    --cor6: #012661;
+    --cor7: #E0326D;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Open Sans', sans-serif;
+    --fonte-gliker: 'Gliker', sans-serif;
+    --fonte-quicksand: 'Quicksand', sans-serif;
+}
+
+
+body {
+    background-image: url(imagens/planodefundo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-decoration-style: center;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h1 {
+    font-family: var(--fonte-gliker);
+    color: #F14975; 
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 30px;
+    padding-top: 70px;
+    margin-top: 40%;
+}
+
+#h1 {
+    font-family: var(--fonte-gliker);
+    font-size: 2.5em;
+    color: #F14975; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.servico {
+    font-family: var(--fonte-quicksand);
+    font-size: 20px;
+    width: 45%;
+    padding: 20px;
+    background-color: #A5C2E9;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #190B99;
+    box-sizing: border-box;
+    transition: 0.3s;
+    border: 1px solid var(--cor1);
+    margin-bottom: 20px;
+}
+
+.container section:hover {
+    transform: scale3d(1.1, 1.1, 1);
+    box-shadow: 0px 0px 10px 0px var(--cor2);
+}
+
+.servico h3 {
+    font-family: var(--fonte-gliker);
+    color: #393D72;
+    font-size: 25px;
+}
+
+.servico p {
+    margin-top: 10px;
+    line-height: 1.5em;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.gato {
+    margin-top: 20px;
+}
+
+.excessao {
+    font-size: 15px;
+}
+
+.parto {
+    margin-bottom: 50px;
+}
+
+li {
+    line-height: 1.75em;
+}
